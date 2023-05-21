@@ -8,7 +8,7 @@ never read its info page. There is a section about the tool history.
 > defined any symbols which were undefined at that point in the link.
 
 > The way to address this problem was to first generate a set of dependencies
-> ofone object file on another.  This was done by a shell script called
+> of one object file on another.  This was done by a shell script called
 > ‘lorder’.
 
 > Then you ran ‘tsort’ over the ‘lorder’ output, and you used the resulting
