@@ -115,6 +115,11 @@ function kahn_tsort(      i, queue, head, tail, vi, children, child, ordered_tot
         vi = queue[head]
         delete queue[head++]
 
+        # normalize queue counters
+        if (head == tail) {
+            head = tail = 0;
+        }
+
         children = vertex[vi, "#"]
         for (child = 0; child < children; child++) {
             # decrease the child vertex degree
