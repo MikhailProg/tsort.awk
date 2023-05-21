@@ -43,7 +43,7 @@ $ SHOW= ./tsort.awk < graph
 Generate svg image for the graph (need dot from graphviz):
 
 ```
-$ ./graph2svg graph graph.svg
+$ ./graph2svg.sh graph graph.svg
 ```
 
 ![Image](graph.svg)
