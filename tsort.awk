@@ -115,7 +115,7 @@ function kahn_tsort(      i, queue, head, tail, vi, children, child, ordered_tot
         vi = queue[head]
         delete queue[head++]
 
-        # normalize queue indecies
+        # normalize queue indicies
         if (head == tail) {
             head = tail = 0;
         }
