@@ -26,7 +26,7 @@ Cycles are treated as errors. DFS detects cycles and resolves them by its
 design, it only needs to mark inprogress nodes and check the mark in the next
 descent call.
 
-Kahn is a different beast. It has no a builtin feature to detect cycles. To
+Kahn is a different beast. It has no a builtin feature to resolve cycles. To
 print all nodes Kahn needs to be extended with a cycle breaker. When a cycle
 is detected first it looks for a node with a minimum degree (minimum number of
 references to the node) then unlinks the node from nodes who reference it and
